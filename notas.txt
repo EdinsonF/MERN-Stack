@@ -1,0 +1,14 @@
+-definir la estructura
+
+-crear el servidor
+
+-instalar nodemon
+
+-escuchar puerto por defecto
+
+
+-instalr morgan
+
+-instalar path
+
+instalar mongoose
