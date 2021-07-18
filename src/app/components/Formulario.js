@@ -38,7 +38,9 @@ class Formulario extends Component{
             })
             const data = await res.json();
             M.toast({html: 'Tarea Actualizada'});
+            this.props.load();
             this.limpiarForm();
+            
             
         } catch (error) {
             console.log(error);
@@ -106,6 +108,8 @@ class Formulario extends Component{
                     })
                     const data = await res.json();
                     M.toast({html: 'Tarea Guardada'});
+                    this.props.load();
+
                     this.limpiarForm();
                     
                 } catch (error) {

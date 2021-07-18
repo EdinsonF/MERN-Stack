@@ -47,7 +47,7 @@ class App extends Component{
         window.addEventListener('click', this.deleteTask);
     }
 
-    validarSubmit = (e) =>{
+   /*  validarSubmit = (e) =>{
         console.log("ESCUCHANDO");
         const {title, responsable, description, priority } = e.target;
         if(title.value !== '' || responsable.value !== '' || description.value !== '' || priority.value !==  ''){
@@ -55,7 +55,7 @@ class App extends Component{
 
         }
 
-    }
+    } */
 
     async cargarTareas(){
         console.log("paso");
@@ -78,7 +78,7 @@ class App extends Component{
                     <div className="row">    
                         <div className="col s5">
                             {/* <img className="App-logo" alt="logo" /> */} 
-                            <Formulario cargarTask={this.cargarTareas}/>
+                            <Formulario load={this.cargarTareas}/>
                         </div>
                         <div className="col s7">
                       
