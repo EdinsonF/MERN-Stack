@@ -43,7 +43,7 @@ class App extends Component{
 
  componentDidMount(){
         this.cargarTareas();
-        window.addEventListener('submit', this.validarSubmit)
+        //window.addEventListener('submit', this.validarSubmit)
         window.addEventListener('click', this.deleteTask);
     }
 
@@ -78,7 +78,7 @@ class App extends Component{
                     <div className="row">    
                         <div className="col s5">
                             {/* <img className="App-logo" alt="logo" /> */} 
-                            <Formulario/>
+                            <Formulario cargarTask={this.cargarTareas}/>
                         </div>
                         <div className="col s7">
                       
