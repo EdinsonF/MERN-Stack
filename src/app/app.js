@@ -52,6 +52,8 @@ class App extends Component{
         const {title, responsable, description, priority } = e.target;
         if(title.value !== '' || responsable.value !== '' || description.value !== '' || priority.value !==  ''){
             this.cargarTareas();
+        console.log("tareas");
+
         }
 
     }
