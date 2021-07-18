@@ -133,7 +133,7 @@ class Formulario extends Component{
                             
                            
                             <div className="row">
-                            <span className="card-title">Agregar Tarea</span>
+                            <span className="card-title">Agregar Tareaaaaaaa</span>
                                 <div className="input-fied col s12 ">
                                     <input type="text" id="title" name="title" className="" placeholder="Titulo" onChange={this.capInput} value={this.state.title}/>
                                 </div>

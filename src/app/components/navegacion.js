@@ -7,7 +7,7 @@ function Navegacion() {
             <nav className="light-blue darken-4">
                 <div className="container">
                     <a className="waves-effect waves-light btn">
-                        MERN<span className="" ></span>
+                        MERNs<span className="" ></span>
                     </a>
         
                 </div>

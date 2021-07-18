@@ -51,22 +51,22 @@ class App extends Component{
         console.log("ESCUCHANDO");
         const {title, responsable, description, priority } = e.target;
         if(title.value !== '' || responsable.value !== '' || description.value !== '' || priority.value !==  ''){
-            this.cargarTareas();
-        console.log("tareas");
+            this.cargarTareas();    
 
         }
 
     }
 
     async cargarTareas(){
+        console.log("paso");
         const datos = await fetch('/api/task');
         const task = await datos.json();
         
         this.setState({
             tasks: task
         });
-        
-       
+        console.log(this.state.tasks);
+   
     }
 
 
